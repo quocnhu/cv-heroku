@@ -1,0 +1,117 @@
+/* Main about section styling */
+.about-section {
+    background-color: #f5f5f5;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title styling */
+  .about-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(0, 123, 255, 0.85);
+  }
+  
+  /* Short thinking section */
+  .short-thinking {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color: rgba(85, 85, 85, 0.9);
+    margin-bottom: 40px;
+  }
+  
+  /* About content layout */
+  .about-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background: rgba(0, 123, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Avatar container */
+  .avatar-container {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-img {
+    width: 329px;
+    height: 329px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 5px solid rgba(107, 96, 96, 0.6);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Info container */
+  .info-container {
+    flex: 3;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .info-container h3.name {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(0, 123, 255, 0.9);
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info-item strong {
+    font-weight: 600;
+    color: rgba(0, 123, 255, 0.85);
+  }
+  
+  .info-item span {
+    color: rgba(85, 85, 85, 0.9);
+  }
+  
+  .about-title {
+    position: relative;
+    display: inline-block;
+    font-size: 36px;
+    color: rgba(0, 123, 255, 0.85);
+  }
+  
+  .about-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%; /* Set width to 50% of the title */
+    height: 4px; /* Thickness of the underline */
+    background-color: rgba(0, 123, 255, 0.85); /* Color of the underline */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  
+    .avatar-container {
+      margin-bottom: 20px;
+    }
+  
+    .info-container {
+      padding-left: 0;
+      text-align: center;
+    }
+  }
+  
